@@ -1,0 +1,56 @@
+{
+	"name": "@rahazad/graph-reducer",
+	"version": "0.1.1",
+	"description": "Something like lodash.merge() (a recursive version of Object.assign()) that specially designed for roudex",
+	"keywords": [
+		"javascript",
+		"js",
+		"roudex",
+		"state",
+		"reucer",
+		"state-reducer",
+		"payload",
+		"graph",
+		"object",
+		"objects",
+		"merge",
+		"deep-assign",
+		"deep-object-assign",
+		"recursive-assign",
+		"recursive-object-assign"
+	],
+	"homepage": "https://github.com/Rahazad/graph-reducer.js#readme",
+	"bugs": {
+		"url": "https://github.com/Rahazad/graph-reducer.js/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Rahazad/graph-reducer.js.git"
+	},
+	"license": "MIT",
+	"author": "S. M. Mir-Ismaili <s.m.mirismaili@gmail.com>",
+	"type": "module",
+	"main": "dist/index.js",
+	"module": "dist/index.modern.js",
+	"source": "src/index.js",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "microbundle-crl --no-compress --format modern,cjs",
+		"prepare": "run-s build",
+		"start": "microbundle-crl watch --no-compress --format modern,cjs",
+		"test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@jest/globals": "^26.6.2",
+		"jest": "26.6.0",
+		"lodash.merge": "^4.6.2",
+		"microbundle-crl": "^0.13.11",
+		"npm-run-all": "^4.1.5"
+	},
+	"engines": {
+		"node": ">=10"
+	}
+}
